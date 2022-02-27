@@ -1,4 +1,6 @@
-#include "./includes_config.h"
+#include <string>
+#include <cmath>
+#include <algorithm>
 struct utils
 {
 public:
