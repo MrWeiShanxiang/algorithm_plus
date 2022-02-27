@@ -1,6 +1,8 @@
 #include <string>
 #include <cmath>
 #include <algorithm>
+#include <array>
+
 struct utils
 {
 public:
@@ -30,15 +32,18 @@ public:
     }
     int gcd(int m, int n)
     {
-        if (m % n == 0) {
+        if (m % n == 0)
+        {
             return n;
         }
         return gcd(n, m % n);
     }
 };
+
 utils util;
-template <std::size_t size_T>
-std::string binary_add(std::array<std::string, size_T> add_values)
+
+template <std::size_t size>
+std::string binary_add(std::array<std::string, size> add_values)
 {
     int BinaryAddSum = 0;
     for (const auto &val : add_values)
@@ -49,6 +54,7 @@ std::string binary_add(std::array<std::string, size_T> add_values)
     return util.DecimalToBinary(BinaryAddSum);
 }
 
+// 返回最匹配查找值的值
 template <typename _find_key_Tp_>
 _find_key_Tp_
 near_search(
@@ -65,4 +71,3 @@ near_search(
     }
     return numbers_array[std::min_element(result.begin(), result.end()) - result.begin()];
 }
-// std::string approximately(std)
