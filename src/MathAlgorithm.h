@@ -2,7 +2,7 @@
 #include <cmath>
 #include <algorithm>
 #include <array>
-#include "./utils/Math.h"
+#include "../utils/Math.h"
 
 utils::utils util;
 
