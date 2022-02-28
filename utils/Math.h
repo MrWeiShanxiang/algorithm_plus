@@ -37,4 +37,9 @@ namespace utils
             return gcd(n, m % n);
         }
     };
+    template <typename _Tp>
+    bool max(_Tp x, _Tp y) { return x > y ? x : y; }
+    template <typename _Tp>
+    bool min(_Tp x, _Tp y) { return x < y ? x : y; }
+
 }
