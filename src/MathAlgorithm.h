@@ -4,8 +4,6 @@
 #include <array>
 #include "../utils/Math.h"
 
-utils::utils util;
-
 template <std::size_t size>
 std::string binary_add(std::array<std::string, size> add_values)
 {
@@ -13,9 +11,9 @@ std::string binary_add(std::array<std::string, size> add_values)
     for (const auto &val : add_values)
     {
         std::string add_element = val;
-        BinaryAddSum += util.BinaryToDecimal(val);
+        BinaryAddSum += utils::BinaryToDecimal(val);
     }
-    return util.DecimalToBinary(BinaryAddSum);
+    return utils::DecimalToBinary(BinaryAddSum);
 }
 
 // 返回最匹配查找值的值

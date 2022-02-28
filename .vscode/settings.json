@@ -1,8 +1,22 @@
 {
-    "editor.formatOnPaste": true, 
-    "editor.formatOnSave": true,
-    "files.associations": {
-        "string": "cpp",
-        "algorithm": "cpp"
-    }
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"files.associations": {
+		"string": "cpp",
+		"algorithm": "cpp",
+		"memory": "cpp",
+		"array": "cpp",
+		"*.tcc": "cpp",
+		"deque": "cpp",
+		"vector": "cpp",
+		"iterator": "cpp",
+		"string_view": "cpp",
+		"functional": "cpp",
+		"initializer_list": "cpp",
+		"istream": "cpp",
+		"numeric": "cpp",
+		"ostream": "cpp",
+		"tuple": "cpp",
+		"type_traits": "cpp"
+	}
 }
