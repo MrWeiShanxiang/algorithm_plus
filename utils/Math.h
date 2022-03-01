@@ -1,3 +1,4 @@
+#pragma once
 #include "includes_config.h"
 namespace utils
 {
