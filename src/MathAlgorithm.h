@@ -34,3 +34,17 @@ near_search(
     }
     return numbers_array[std::min_element(result.begin(), result.end()) - result.begin()];
 }
+
+template <typename _Tp>
+_Tp near_search(_Tp arr[], _Tp r, _Tp find_key)
+{
+    std::vector<_Tp> result;
+    for (int i = 0; i < r; i++)
+    {
+        if (find_key > arr[i])
+            result.push_back(find_key - arr[i]);
+        else
+            result.push_back(arr[i] - find_key);
+    }
+    return arr[std::min_element(result.begin(), result.end()) - result.begin()];
+}
