@@ -75,5 +75,17 @@ namespace utils
     bool max(_Tp x, _Tp y) { return x > y ? x : y; }
     template <typename _Tp>
     bool min(_Tp x, _Tp y) { return x < y ? x : y; }
+    int Pow(int a, int n)
+    {
+        int result = 1;
+        while (n)
+        {
+            if (n & 1 == 1) /* n mod 2 */
+                result = result * a;
+            a <<= 1; /* double a */
+            n >> 1;  /* round down n/2 */
+        }
+        return result;
+    }
 
 }
